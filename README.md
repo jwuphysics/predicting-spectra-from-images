@@ -12,4 +12,24 @@ Galaxies can be described by features of their optical spectra such as oxygen em
 
 Notebooks will be added soon. Due to random initialization, loss values may differ slightly from ones presented in paper or poster.
 
-Our work is based on [Portillo et al. (2020, AJ)](https://github.com/stephenportillo/SDSS-VAE) and [Ye et al. (2020, ICLR)](https://github.com/yechengxi/deconvolution). Please seed their code and corresponding papers for more details.
+Our work is based on [Portillo et al. (2020, AJ)](https://ui.adsabs.harvard.edu/abs/2020AJ....160...45P/abstract) [[Github repo]](https://github.com/stephenportillo/SDSS-VAE) and [Ye et al. (2020, ICLR)](https://openreview.net/forum?id=rkeu30EtvS) [[Github repo]](https://github.com/yechengxi/deconvolution). Please see their code and corresponding papers for more details.
+
+## Citation
+
+```
+@ARTICLE{2020arXiv200912318W,
+       author = {{Wu}, John F. and {Peek}, J.~E.~G.},
+        title = "{Predicting galaxy spectra from images with hybrid convolutional neural networks}",
+      journal = {arXiv e-prints},
+     keywords = {Astrophysics - Instrumentation and Methods for Astrophysics, Astrophysics - Astrophysics of Galaxies, Computer Science - Computer Vision and Pattern Recognition, Computer Science - Machine Learning},
+         year = 2020,
+        month = sep,
+          eid = {arXiv:2009.12318},
+        pages = {arXiv:2009.12318},
+archivePrefix = {arXiv},
+       eprint = {2009.12318},
+ primaryClass = {astro-ph.IM},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2020arXiv200912318W},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+```
