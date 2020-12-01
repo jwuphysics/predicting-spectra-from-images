@@ -3,6 +3,11 @@
 
 See our workshop mini-paper on [arXiv](https://arxiv.org/abs/2009.12318) or check out the poster/talk (coming soon)! This work has been accepted to the [Machine Learning and the Physical Sciences](https://ml4physicalsciences.github.io/2020/) workshop at the 34th Conference on Neural Information Processing Systems ([NeurIPS 2020](https://neurips.cc/)).
 
+Results can be seen in the example galaxies below. Given five-band Pan-STARRS imaging of a galaxy, our trained convolutional neural network can estimate the optical-wavelength spectrum (shown in red) remarkably close to the ground-truth SDSS spectrum (shown in black).
+
+![Example results](img/results.png)
+
+
 ## Abstract
 
 Galaxies can be described by features of their optical spectra such as oxygen emission lines, or morphological features such as spiral arms. Although spectroscopy provides a rich description of the physical processes that govern galaxy evolution, spectroscopic data are observationally expensive to obtain. For the first time, we are able to robustly predict galaxy spectra directly from broad-band imaging. We present a powerful new approach using a hybrid convolutional neural network with deconvolution instead of batch normalization; this hybrid CNN outperforms other models in our tests. The learned mapping between galaxy imaging and spectra will be transformative for future wide-field surveys, such as with the Vera C. Rubin Observatory and *Nancy Grace Roman Space Telescope*, by multiplying the scientific returns for spectroscopically-limited galaxy samples. 
