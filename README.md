@@ -1,7 +1,7 @@
 # Predicting galaxy spectra from images with hybrid convolutional neural networks
 **Authors: John F. Wu ([@jwuphysics](https://github.com/jwuphysics/)) & Joshua E. G. Peek ([@jegpeek](https://github.com/jegpeek))**
 
-See our workshop mini-paper on [arXiv](https://arxiv.org/abs/2009.12318) or check out the poster/talk (coming soon)! This work has been accepted to the [Machine Learning and the Physical Sciences](https://ml4physicalsciences.github.io/2020/) workshop at the 34th Conference on Neural Information Processing Systems ([NeurIPS 2020](https://neurips.cc/)).
+See our workshop mini-paper on [arXiv](https://arxiv.org/abs/2009.12318) or check out the [poster](https://ml4physicalsciences.github.io/2020/files/NeurIPS_ML4PS_2020_3_poster.pdf) or [talk](https://www.youtube.com/watch?v=7dyncN1vKEE)! This work has been accepted to the [Machine Learning and the Physical Sciences](https://ml4physicalsciences.github.io/2020/) workshop at the 34th Conference on Neural Information Processing Systems ([NeurIPS 2020](https://neurips.cc/)).
 
 Results can be seen in the example galaxies below. Given five-band Pan-STARRS imaging of a galaxy, our trained convolutional neural network can estimate the optical-wavelength spectrum (shown in red) remarkably close to the ground-truth SDSS spectrum (shown in black).
 
