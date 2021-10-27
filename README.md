@@ -14,7 +14,7 @@ Galaxies can be described by features of their optical spectra such as oxygen em
 
 ## Code
 
-### Prerequesites
+### Prerequisites
 In order to replicate our code, you will need `pytorch >= 1.4` and `fastai2` (the up-to-date library `fastai >= 2.0` may work but hasn't been tested). You will also need to install `astropy`, `astroML`, and `mish_cuda`, in addition to the Github repos mentioned below.
 
 Our work is based on [Portillo et al. (2020, AJ)](https://ui.adsabs.harvard.edu/abs/2020AJ....160...45P/abstract) [[Github repo](https://github.com/stephenportillo/SDSS-VAE)] and [Ye et al. (2020, ICLR)](https://openreview.net/forum?id=rkeu30EtvS) [[Github repo](https://github.com/yechengxi/deconvolution)]. Please see their code and corresponding papers for more details. We will also need to clone their repositories (clone [`SDSS-VAE`](https://github.com/stephenportillo/SDSS-VAE) into the root directory and [`deconvolution`](https://github.com/yechengxi/deconvolution) into `{ROOT}/src`). 
