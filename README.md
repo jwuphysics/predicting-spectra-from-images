@@ -17,7 +17,7 @@ Galaxies can be described by features of their optical spectra such as oxygen em
 ### Prerequisites
 In order to replicate our code, you will need `pytorch >= 1.4` and `fastai2` (the up-to-date library `fastai >= 2.0` may work but hasn't been tested). You will also need to install `astropy`, `astroML`, and `mish_cuda`, in addition to the Github repos mentioned below.
 
-Many thanks to Liza Sazonova (JHU) for getting this to work by using `conda install pytorch==1.6.0 torchvision==0.7.0 cudatoolkit=10.1 -c pytorch` and also requiring `fastcore==0.1.39`, `fastai2==0.0.30`, and `mish_cuda` installation via [these instructions](https://github.com/thomasbrandon/mish-cuda/issues/9).
+Many thanks to Liza Sazonova (JHU) for getting this to work by using `conda install pytorch==1.6.0 torchvision==0.7.0 cudatoolkit=10.1 -c pytorch` and also requiring `fastcore==0.1.39`, `fastai2==0.0.30`, and [`mish_cuda`](https://github.com/thomasbrandon/mish-cuda) (note that you may need to move a [file](https://github.com/thomasbrandon/mish-cuda/issues/9)).
 
 Our work is based on [Portillo et al. (2020, AJ)](https://ui.adsabs.harvard.edu/abs/2020AJ....160...45P/abstract) [[Github repo](https://github.com/stephenportillo/SDSS-VAE)] and [Ye et al. (2020, ICLR)](https://openreview.net/forum?id=rkeu30EtvS) [[Github repo](https://github.com/yechengxi/deconvolution)]. Please see their code and corresponding papers for more details. We will also need to clone their repositories (clone [`SDSS-VAE`](https://github.com/stephenportillo/SDSS-VAE) into the root directory and [`deconvolution`](https://github.com/yechengxi/deconvolution) into `{ROOT}/src`). 
 
