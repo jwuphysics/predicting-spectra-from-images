@@ -26,7 +26,7 @@ We use Pan-STARRS 1 (PS1) image cutouts hosted on the [Mikulski Archive for Spac
 
 The Sloan Digital Sky Survey (SDSS) spectra should be compressed and saved in the [SDSS-VAE repository](https://github.com/stephenportillo/SDSS-VAE).
 
-The `xresnet18_hybrid` pretrained model can be found on [Dropbox](https://www.dropbox.com/s/9282jfj8ienxc7i/sdss64k-xresnet18_hybrid-neurips_10ep.pth?dl=0).
+The `xresnet18_hybrid` pretrained model can be downloaded [here](https://www.dropbox.com/s/9282jfj8ienxc7i/sdss64k-xresnet18_hybrid-neurips_10ep.pth?dl=0).
 
 ### Results
 Results can be recreated by running the `comparing-models.ipynb` notebook. 
