@@ -17,12 +17,16 @@ Galaxies can be described by features of their optical spectra such as oxygen em
 ### Prerequisites
 In order to replicate our code, you will need `pytorch >= 1.4` and `fastai2` (the up-to-date library `fastai >= 2.0` may work but hasn't been tested). You will also need to install `astropy`, `astroML`, and `mish_cuda`, in addition to the Github repos mentioned below.
 
+Many thanks to Liza Sazonova (JHU) for getting this to work by using `conda install pytorch==1.6.0 torchvision==0.7.0 cudatoolkit=10.1 -c pytorch` and also requiring `fastcore==0.1.39`, `fastai2==0.0.30`, and `mish_cuda` installation via [these instructions](https://github.com/thomasbrandon/mish-cuda/issues/9).
+
 Our work is based on [Portillo et al. (2020, AJ)](https://ui.adsabs.harvard.edu/abs/2020AJ....160...45P/abstract) [[Github repo](https://github.com/stephenportillo/SDSS-VAE)] and [Ye et al. (2020, ICLR)](https://openreview.net/forum?id=rkeu30EtvS) [[Github repo](https://github.com/yechengxi/deconvolution)]. Please see their code and corresponding papers for more details. We will also need to clone their repositories (clone [`SDSS-VAE`](https://github.com/stephenportillo/SDSS-VAE) into the root directory and [`deconvolution`](https://github.com/yechengxi/deconvolution) into `{ROOT}/src`). 
 
 ### Data
 We use Pan-STARRS 1 (PS1) image cutouts hosted on the [Mikulski Archive for Space Telescopes](https://panstarrs.stsci.edu/) (see [example](ps1images.stsci.edu/)). Use the script `src/get_ps1_fits.py` to download each PS1 image in FITS format for the five channels (*grizy*) and combine them into a single `.npy` file. Default size is 224x224 pixels at 0.25 arcsec/pixel. These will be stored in the directory `{ROOT}/sdss_npy_images` by default.
 
 The Sloan Digital Sky Survey (SDSS) spectra should be compressed and saved in the [SDSS-VAE repository](https://github.com/stephenportillo/SDSS-VAE).
+
+The `xresnet18_hybrid` pretrained model can be found on [Dropbox](https://www.dropbox.com/s/9282jfj8ienxc7i/sdss64k-xresnet18_hybrid-neurips_10ep.pth?dl=0).
 
 ### Results
 Results can be recreated by running the `comparing-models.ipynb` notebook. 
