@@ -17,7 +17,7 @@ Galaxies can be described by features of their optical spectra such as oxygen em
 ### Prerequisites
 In order to replicate our code, you will need `pytorch >= 1.4` and `fastai2` (the up-to-date library `fastai >= 2.0` may work but hasn't been tested). You will also need to install `astropy`, `astroML`, and `mish_cuda`, in addition to the Github repos mentioned below.
 
-Many thanks to Liza Sazonova (JHU) for getting this to work by using `conda install pytorch==1.6.0 torchvision==0.7.0 cudatoolkit=10.1 -c pytorch` and also requiring `fastcore==0.1.39`, `fastai2==0.0.30`, and [`mish_cuda`](https://github.com/thomasbrandon/mish-cuda) (note that you may need to move a [file](https://github.com/thomasbrandon/mish-cuda/issues/9)).
+You may need to run `conda install pytorch==1.6.0 torchvision==0.7.0 cudatoolkit=10.1 -c pytorch`, while including the requirements `fastcore==0.1.39`, `fastai2==0.0.30`, and [`mish_cuda`](https://github.com/thomasbrandon/mish-cuda) (note that you may need to move a [file](https://github.com/thomasbrandon/mish-cuda/issues/9)).
 
 Our work is based on [Portillo et al. (2020, AJ)](https://ui.adsabs.harvard.edu/abs/2020AJ....160...45P/abstract) [[Github repo](https://github.com/stephenportillo/SDSS-VAE)] and [Ye et al. (2020, ICLR)](https://openreview.net/forum?id=rkeu30EtvS) [[Github repo](https://github.com/yechengxi/deconvolution)]. Please see their code and corresponding papers for more details. We will also need to clone their repositories (clone [`SDSS-VAE`](https://github.com/stephenportillo/SDSS-VAE) into the root directory and [`deconvolution`](https://github.com/yechengxi/deconvolution) into `{ROOT}/src`). 
 
@@ -26,7 +26,7 @@ We use Pan-STARRS 1 (PS1) image cutouts hosted on the [Mikulski Archive for Spac
 
 The Sloan Digital Sky Survey (SDSS) spectra should be compressed and saved in the [SDSS-VAE repository](https://github.com/stephenportillo/SDSS-VAE).
 
-The `xresnet18_hybrid` pretrained model can be downloaded [here](https://www.dropbox.com/s/9282jfj8ienxc7i/sdss64k-xresnet18_hybrid-neurips_10ep.pth?dl=0). You can also access the necessary files for [`latent_pca.pkl`](https://www.dropbox.com/s/445amn7gj2n6ibr/latent_pca.pkl?dl=0) and [`meanspec.npy`](https://www.dropbox.com/s/kpffqm9l87oeue1/meanspec.npy?dl=0).
+The `xresnet18_hybrid` pretrained model can be downloaded [here](https://www.dropbox.com/s/9282jfj8ienxc7i/sdss64k-xresnet18_hybrid-neurips_10ep.pth?dl=0). You can also access the necessary files for [`sdss_64k.csv`](https://www.dropbox.com/s/tscw0n5la3d3nok/sdss_64k.csv?dl=0), [`latent_pca.pkl`](https://www.dropbox.com/s/445amn7gj2n6ibr/latent_pca.pkl?dl=0) and [`meanspec.npy`](https://www.dropbox.com/s/kpffqm9l87oeue1/meanspec.npy?dl=0).
 
 ### Results
 Results can be recreated by running the `comparing-models.ipynb` notebook. 
@@ -52,3 +52,7 @@ archivePrefix = {arXiv},
       adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }
 ```
+
+## Acknowledgments
+
+Thanks to Liza Sazonova (JHU) and Alex Gagliano (UIUC) for suggestions and fixes to the repository.
