@@ -22,7 +22,10 @@ class XResNet_hybrid(nn.Sequential):
     @delegates(ResBlock)
     def __init__(self, block, expansion, layers, p=0.0, c_in=3, n_out=1000, stem_szs=(32,32,64),
                  widen=1.0, sa=False, act_cls=defaults.activation, **kwargs):
-        store_attr(self, 'block,expansion,act_cls')
+        self.block = block
+        self.expansion = expansion
+        self.act_cls = act_cls
+        
         stem_szs = [c_in, *stem_szs]
         stem = [DeconvLayer(stem_szs[i], stem_szs[i+1], stride=2 if i==0 else 1, act_cls=act_cls)
                 for i in range(3)]
